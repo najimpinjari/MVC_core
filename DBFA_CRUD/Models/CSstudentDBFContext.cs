@@ -26,15 +26,15 @@ namespace DBFA_CRUD.Models
             modelBuilder.Entity<CSstudent>(entity =>
             {
                 entity.Property(e => e.City)
-                    .HasMaxLength(40)
+                    .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Gender)
-                    .HasMaxLength(60)
+                    .HasMaxLength(10)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Name)
-                    .HasMaxLength(50)
+                    .HasMaxLength(100)
                     .IsUnicode(false);
             });
 
